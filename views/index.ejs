@@ -1,0 +1,42 @@
+
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<p>
+<div style='float:left'>
+	<a href='/'> Home </a>
+</div>
+<div style='float:left'>
+	<a href='/addLink', style='margin:10px'> addLink </a>
+	<a href='/findLink',style='margin:10px'> findLink </a>
+</div>
+<p></p>
+<br></br>
+
+<div style='padding-right:50px'>
+	<table border='1'>
+		<tr>
+			<td> linkNumber </td>
+			<td> linkIP </td>
+			<td> downlinkPktLoss </td>
+			<td> downlinkLatency </td>
+			<td> downlinkJitter </td>
+			<td> uplinkPktLoss </td>
+			<td> uplinkLatency </td>
+			<td> uplinkJitter </td>
+			<td> measureDate </td>
+		</tr>
+		<% links.forEach(function(link){ %>
+			<tr>
+				<td><%= link.linkNumber %></td>
+				<td><%= link.linkIP %></td>
+				<td><%= link.downlinkPktLoss %></td>
+				<td><%= link.downlinkLatency %></td>
+				<td><%= link.downlinkJitter %></td>
+				<td><%= link.uplinkPktLoss %></td>
+				<td><%= link.uplinkLatency %></td>
+				<td><%= link.uplinkJitter %></td>
+				<td><%= link.measureDate %></td>
+			</tr>
+		<% }); %>
+	</table>
+</div>
