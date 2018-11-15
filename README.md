@@ -17,8 +17,8 @@ var app = express();
 
 ## After learning, you could have the ability to build your own app.
 
-##Let's started
-###2018/11/4
+## Let's started
+### 2018/11/4
 1. 安裝Node.js
 2. 使用命列介面
   1. Mac 終端機
@@ -61,7 +61,7 @@ app.listen(3000, function(req, res){
 	console.log("server started");
 });
 ```
-#Node.js quickly tutorial
+# Node.js quickly tutorial
 - module.exports，就是宣告，這個登入物件，是一個modules，可以讓任何程式使用require調用這個模組，使用裡面的物件，方法及變數
 - 我們只有在自創module時，require() 裡要寫清楚檔案path，如果是原生模組或是npm時，則不需要
 - Express 的 middleware 功能可以讓請求（request）在被處理之前，先執行一些前置作業，例如檢查使用者是否有登入或是紀錄一些使用者的瀏覽資料等等，凡是需要在實際處理請求之前要做的動作，都可以使用 middleware 來處理
@@ -71,7 +71,7 @@ app.listen(3000, function(req, res){
 
 待續
 
-#jade template
+# jade template
 - npm install jade --save
 ```jade
 app.set("view engine", "jade");
@@ -81,12 +81,12 @@ app.get("/", function(req, res){
 });
 ```
 
-#MVC
+# MVC
 - Model: 做資料庫，接收controller的request處理後再回應給controller
 - Controller: 做路由繞送
 - View: 畫面的呈現(html、jade、Angularjs)
 
-#swagger-ui implement
+# swagger-ui implement
 - npm install swagger-ui-express --save
 ```javascript
 var swaggerUi = require("swagger-ui-express");
@@ -95,7 +95,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 ```
 註: 線上swagger編輯 -> swagger editor
 
-#Mongodb quickly tutorial
+# Mongodb quickly tutorial
 - install mongodb in MS/Linux/Mac
 - mongod --dbpath d:\dbfolder\data\db
 - mongo shell -> mongo (已經加入環境變數)
@@ -105,7 +105,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 	- db.CollectionName.update()
 	- db.CollectionName.remove()
 
-#Mongoose quickly tutorial
+# Mongoose quickly tutorial
 - Nodejs介接MongoDB的第三方模組
 ```javascript
 ./lib/db.js
@@ -133,14 +133,14 @@ Blog.remove({_id: req.params.id}, function(err){
 });
 ```
 
-#Markdown
+# Markdown
 
 待續
 
-#OpenStack
+# OpenStack
 
 待續
 
-#VNF deployment to GCP (Google Cloud Platform)
+# VNF deployment to GCP (Google Cloud Platform)
 
 待續
