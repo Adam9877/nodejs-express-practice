@@ -46,6 +46,9 @@ paths:
 ```        
 ## after you modify your yaml file, you need to interpret your node file again. Otherwise, the yaml file will not change.
 
+## view of swagger doc
+![Image of swaggerDoc](https://github.com/Adam9877/nodejs-express-practice/blob/master/images/swagger.gif)
+
 # ref website
 1. https://www.npmjs.com/package/swagger-ui-express
 2. swagger editor on line
