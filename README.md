@@ -67,7 +67,7 @@ app.listen(3000, function(req, res){
 - Express 的 middleware 功能可以讓請求（request）在被處理之前，先執行一些前置作業，例如檢查使用者是否有登入或是紀錄一些使用者的瀏覽資料等等，凡是需要在實際處理請求之前要做的動作，都可以使用 middleware 來處理
 - 在使用 middleware 時必須要注意他的放置位置必須要在 routes 之前，程式在執行的時候會依據 middleware 與 routes 的先後順序來執行，如果不小心將 middleware 放在 routes 之後，那麼在 routes 處理完請求之後就會結束處理的流程，這樣 middleware 就根本不會執行
 
-#How to call c code using Node.js
+# How to call c code using Node.js
 
 待續
 
