@@ -16,7 +16,7 @@
 > [Link](http://www.google.com.tw)
 
 6. 插入圖片 !\[Image\](圖片網址)
-![Image of test](https://github.com/Adam9877/nodejs-express-practice/tree/master/images/swagger.gif)
+![Image of swaggerDoc](https://github.com/Adam9877/nodejs-express-practice/blob/master/images/swagger.gif)
 
 7. Blockquote \> Blockquote
 > Blockquote
