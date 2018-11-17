@@ -56,8 +56,19 @@ paths:
 # 重要說明
 1. All API endpoints are relative to the base URL. assuming the base URL of https://api.example.com/v1, the /users endpoint refers to https://api.example.com/v1/users.
 2. server url也可用變數(variable)來表示，但就是要在底下特別註明variable的值與說明
-
-
+```yaml
+servers:
+  - url: https://{customerId}.saas-app.com:{port}/v2
+    variables:
+      customerId:
+        default: demo
+        description: .........
+      port:
+        enum:
+          - '443'
+          - '8443'
+        default: '443'
+```
 
 ---
 # how to install & use swagger in express 
