@@ -144,3 +144,15 @@ Blog.remove({_id: req.params.id}, function(err){
 # VNF deployment to GCP (Google Cloud Platform)
 
 待續
+
+# 20181117
+1. 安裝 firebase-admin套件
+2. 初始化專案
+  - 建立專案
+  - 取得金鑰: 
+  > project overview-> 專案設定 -> 服務帳戶
+  - 撰寫初始化的程式碼
+3. 資料庫操作
+  - 建立與資料庫的連接
+  - 取得路徑參考
+  - 操作資料: 新增、修改、刪除、讀取(CRUD)
